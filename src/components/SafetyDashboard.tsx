@@ -13,6 +13,7 @@ import {
   Clock,
   Heart
 } from "lucide-react";
+import shaktiLogo from "@/assets/shakti-logo.jpg";
 
 interface SafetyStats {
   safeZones: number;
@@ -45,9 +46,9 @@ const SafetyDashboard = () => {
         {/* Header */}
         <div className="text-center py-6">
           <div className="flex items-center justify-center gap-2 mb-2">
-            <Shield className="h-8 w-8 text-primary" />
+            <img src={shaktiLogo} alt="Shakti Logo" className="h-10 w-10 rounded-full object-cover" />
             <h1 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              SafeGuard
+              Shakti
             </h1>
           </div>
           <p className="text-muted-foreground">Your Personal Safety Companion</p>

@@ -10,6 +10,7 @@ import {
   Menu,
   X
 } from "lucide-react";
+import shaktiLogo from "@/assets/shakti-logo.jpg";
 
 interface NavigationProps {
   currentPage: string;
@@ -67,9 +68,9 @@ const Navigation = ({ currentPage, onPageChange }: NavigationProps) => {
       <div className="hidden md:block fixed left-0 top-0 h-full w-64 bg-card border-r border-border shadow-soft z-40">
         <div className="p-6">
           <div className="flex items-center gap-2 mb-8">
-            <Shield className="h-8 w-8 text-primary" />
+            <img src={shaktiLogo} alt="Shakti Logo" className="h-12 w-12 rounded-full object-cover" />
             <h1 className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              SafeGuard
+              Shakti
             </h1>
           </div>
           
@@ -102,9 +103,9 @@ const Navigation = ({ currentPage, onPageChange }: NavigationProps) => {
         <div className="bg-card/95 backdrop-blur-lg border-b border-border shadow-soft">
           <div className="flex items-center justify-between p-4">
             <div className="flex items-center gap-2">
-              <Shield className="h-6 w-6 text-primary" />
+              <img src={shaktiLogo} alt="Shakti Logo" className="h-8 w-8 rounded-full object-cover" />
               <h1 className="text-lg font-bold bg-gradient-primary bg-clip-text text-transparent">
-                SafeGuard
+                Shakti
               </h1>
             </div>
             
